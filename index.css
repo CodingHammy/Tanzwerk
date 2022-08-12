@@ -78,3 +78,12 @@ meter {
 }
 
 /* my css starts here */
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.imgProfile {
+    width: 100px;
+}
