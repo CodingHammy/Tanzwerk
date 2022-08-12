@@ -82,8 +82,23 @@ meter {
 body {
     background-color: black;
     color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
 }
 
 .imgProfile {
     width: 100px;
+}
+
+#titleFont {
+    font-family: 'Merienda', cursive;
+}
+
+.small-title {
+    font-weight: 500;
+}
+
+#people {
+    padding: 1em 1em 1em 0;
+    font-weight: 700;
 }
