@@ -81,7 +81,7 @@ meter {
 
 body {
     background-color: black;
-    color: white;
+    color: rgb(241, 241, 241);
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
 }
@@ -90,7 +90,7 @@ body {
     width: 100px;
 }
 
-#titleFont {
+#logoFont {
     font-family: 'Merienda', cursive;
 }
 
@@ -98,7 +98,69 @@ body {
     font-weight: 500;
 }
 
-#people {
+.mainTitles {
     padding: 1em 1em 1em 0;
+    font-size: 1.5em;
     font-weight: 700;
+}
+
+#Willkommen {
+    background-image: url(/mainImages/AdobeStock_218963959_AIRework.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 90vh;
+    text-shadow: 1px -1px 1px grey;
+}
+
+#Willkommen>div {
+    display: flex;
+    flex-direction: row;
+    padding: 15px 100px;
+}
+
+
+#Willkommen #titleFont {
+    font-size: 2.7em;
+    padding: 20px;
+    font-weight: 400;
+
+}
+
+#titleFont :first-of-type {
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+
+#Willkommen>div>p {
+    padding: 20px;
+    width: 500px;
+    text-align: left;
+    font-size: 1.4em;
+    font-weight: 500;
+    margin: auto 0;
+    letter-spacing: 0em;
+}
+
+
+#mainNavBar {
+    list-style: none;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 10vh;
+    position: sticky;
+    padding-left: 6.5em;
+}
+
+
+.navAncor {
+    padding: 30px;
+
+}
+
+nav ul li:hover {
+    background-color: black;
 }
