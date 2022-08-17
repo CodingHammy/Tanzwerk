@@ -79,32 +79,12 @@ html {
     scroll-behavior: smooth;
 }
 
-
 body {
     background-color: black;
     color: rgb(241, 241, 241);
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 1.2rem;
-}
-
-.imgProfile {
-    width: 11em;
-    /* height: 11em`; */
-}
-
-#logoFont {
-    font-family: 'Merienda', cursive;
-}
-
-.small-title {
-    font-weight: 500;
-}
-
-.mainTitles {
-    padding: 1em 1em 1em 0;
-    font-size: 1.7em;
-    font-weight: 700;
 }
 
 #Willkommen {
@@ -118,6 +98,39 @@ body {
     text-shadow: 1px -1px 1px grey;
 
 }
+
+#logoFont {
+    font-family: 'Merienda', cursive;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .imgProfile {
+    width: 11em;
+}
+
+
+.small-title {
+    font-weight: 500;
+}
+
+.mainTitles {
+    padding: 1em 1em 1em 0;
+    font-size: 1.7em;
+    font-weight: 700;
+}
+
+
 
 #Willkommen>div {
     display: flex;
@@ -171,10 +184,9 @@ body {
 
 nav ul li:hover {
     background-color: black;
-    /* padding: 40px 40px 100px 40px; */
+
 }
 
-/* wrapper */
 
 .wrapper {
     width: 95vw;
@@ -185,7 +197,6 @@ nav ul li:hover {
     color: rgb(69, 146, 177);
 }
 
-/* das section */
 
 #Das {
     display: flex;
@@ -235,10 +246,6 @@ nav ul li:hover {
     font-size: 2rem;
 }
 
-
-
-
-/* second */
 
 #Was>div {
     display: flex;
@@ -297,4 +304,4 @@ footer div h2 {
 
 #kontaktTab div p {
     width: 100%;
-}
+} */
