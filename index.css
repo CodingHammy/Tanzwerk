@@ -75,6 +75,11 @@ meter {
 
 /* header */
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 body {
     background-color: black;
     color: rgb(241, 241, 241);
