@@ -80,6 +80,7 @@ body {
     color: rgb(241, 241, 241);
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
+    font-size: 1.2rem;
 }
 
 .imgProfile {
@@ -121,7 +122,7 @@ body {
 
 
 #titleFont {
-    font-size: 2.8em;
+    font-size: 2.8rem;
     padding: 20px;
     font-weight: 400;
     line-height: 1.2em;
@@ -138,7 +139,7 @@ body {
     padding: 20px;
     width: 500px;
     text-align: left;
-    font-size: 1.4em;
+    font-size: 1.4rem;
     font-weight: 500;
     margin: auto 0;
     letter-spacing: 0em;
@@ -175,6 +176,9 @@ nav ul li:hover {
     margin: auto;
 }
 
+.blue {
+    color: rgb(69, 146, 177);
+}
 
 /* das section */
 
@@ -185,16 +189,12 @@ nav ul li:hover {
     padding-top: 2em;
 }
 
-#dasSindWirMain {
+.bigheaders {
     width: 33%;
-    font-size: 11em;
-    font-weight: 800;
     margin: 0 auto;
     text-align: start;
-}
-
-#dasSindWirMain h2 {
-    font-size: 1.2em;
+    font-size: 12rem;
+    font-weight: 800;
     line-height: 1.1em;
 }
 
@@ -212,6 +212,7 @@ nav ul li:hover {
 
 .profileText {
     padding-left: 2em;
+
 }
 
 .profileText>div {
@@ -221,11 +222,74 @@ nav ul li:hover {
 }
 
 .small-title {
-    /* padding: 1em 1em 1em 0; */
     font-size: 1.7rem;
     font-weight: 700;
 }
 
 .mainTextStyle {
     font-size: 2rem;
+}
+
+
+
+
+/* second */
+
+#Was>div {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    flex-direction: row;
+    padding-top: 2em;
+}
+
+#wirText {
+    letter-spacing: 0.1rem;
+    font-weight: 300;
+    margin: 0;
+    flex-direction: column;
+    width: 60%;
+    padding: 3vh 0 0 3vw;
+}
+
+
+.wasWirHeader {
+    width: 33%;
+    margin: 0 auto;
+    align-items: start;
+    font-size: 9rem;
+    font-weight: 800;
+    line-height: 1.1em;
+    text-align: justify;
+}
+
+.wasWirHeader div h2 {
+    width: 80%;
+}
+
+footer div h2 {
+    font-size: 10rem;
+    font-weight: 800;
+    width: 90vw;
+    margin: auto;
+    padding: 2vh 0;
+}
+
+#Kontakt {
+    padding-bottom: 50vh;
+}
+
+#kontaktTab {
+    display: flex;
+    width: 90vw;
+}
+
+#kontaktTab div {
+    width: 30%;
+    margin: 0 auto;
+    padding: 0 0 0 1vw;
+}
+
+#kontaktTab div p {
+    width: 100%;
 }
