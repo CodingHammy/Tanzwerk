@@ -79,6 +79,9 @@ html {
     scroll-behavior: smooth;
 }
 
+.blue {
+    color: rgb(69, 146, 177);
+}
 
 .wrapper {
     width: 95vw;
@@ -93,6 +96,11 @@ body {
     font-size: 1.2rem;
 }
 
+.smallTitle {
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
 
 /* header */
 
@@ -104,7 +112,7 @@ body {
     background-size: cover;
     width: 100vw;
     height: 100vh;
-    text-shadow: -4px -4px 10px rgb(0, 0, 0), 4px 4px 10px rgb(0, 0, 0), -4px 4px 10px rgb(0, 0, 0);
+    text-shadow: -2px -2px 5px rgb(99, 89, 89), 4px 4px 10px rgb(61, 60, 60), -4px 4px 10px rgb(0, 0, 0);
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -173,6 +181,52 @@ body {
     font-weight: 800;
     font-size: 100px;
     padding: 5vw 0 10vw 0;
+}
+
+.bigHeadersSmallScreen {
+    font-size: 3.5em;
+}
+
+.mainTextStyle {
+    padding: 1rem 0 1rem;
+}
+
+/*  Das section */
+
+.imgProfile {
+    width: 8rem;
+    border-radius: 10%;
+    margin-right: 1rem;
+    height: 25%;
+
+    /* box-shadow: 0 0 20px rgb(255, 255, 255); */
+}
+
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 2rem .5rem 0 .5rem;
+    margin-bottom: 5px;
+}
+
+.profileText {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.profileText div h5 {
+    position: relative;
+    top: 50%;
+}
+
+.profile div p {
+    padding-top: .5rem;
+    margin-top: 1rem;
+    border-top: 1px solid white;
 }
 
 
@@ -272,9 +326,7 @@ nav ul li:hover {
     margin: auto;
 }
 
-.blue {
-    color: rgb(69, 146, 177);
-}
+
 
 
 #Das {
