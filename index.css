@@ -161,6 +161,7 @@ body {
 }
 
 #navBar {
+    position: sticky;
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -199,7 +200,6 @@ body {
 
 .imgProfile {
     width: 8rem;
-    border-radius: 10%;
     margin: 0 1rem 0 .5rem;
     height: 25%;
 
@@ -231,7 +231,7 @@ body {
 .profile div p {
     padding-top: .5rem;
     margin-top: 1rem;
-    border-top: 1px solid white;
+    /* border-top: 1px solid white; */
 }
 
 .derVorstand {
