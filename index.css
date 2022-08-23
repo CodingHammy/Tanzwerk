@@ -111,6 +111,8 @@ body {
 
 /* header */
 
+
+
 #Willkommen {
     background-image: url(/mainImages/Hero.jpg);
     box-shadow: inset 0 0 100px 0 rgb(0, 0, 0);
@@ -156,12 +158,32 @@ body {
     font-family: 'Merienda', cursive;
 }
 
+/* navBar */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #navBarParent {
-    position: absolute;
+    position: sticky;
     font-size: 4vw;
     font-weight: 400;
-    bottom: 0;
+    top: 0;
+    z-index: 0;
 }
 
 #navBar {
@@ -172,14 +194,33 @@ body {
     text-align: center;
 }
 
+
 .navBarChild {
     padding-bottom: 2vh;
     margin: auto 0;
 }
 
-.navBarChild:hover {
+/* .navBarChild:hover {
     background-color: black;
-}
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Sections */
 
