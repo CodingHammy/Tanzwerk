@@ -75,6 +75,10 @@ meter {
 
 /* all */
 
+body {
+    margin: 0 auto;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -161,9 +165,10 @@ body {
 }
 
 #navBar {
-    position: sticky;
+    /* position: sticky; */
+    flex-wrap: wrap;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     text-align: center;
 }
 
@@ -247,7 +252,24 @@ body {
     padding-left: 1rem;
 }
 
+.image {
+    display: flex;
+    margin: auto;
+    padding: 20px 0 40px;
+    width: 100%;
+}
 
+.forty:first-of-type {
+    padding: 0 20px 0 0;
+    width: 110%;
+}
+
+
+
+.forty img {
+    padding-left: 3vw;
+    height: 300px;
+}
 
 
 
