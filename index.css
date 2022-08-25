@@ -179,19 +179,23 @@ body {
 
 
 #navBarParent {
+    background: none;
     position: sticky;
     font-size: 4vw;
     font-weight: 400;
     top: 0;
-    z-index: 0;
+
 }
 
 #navBar {
     /* position: sticky; */
+    z-index: 1;
+    overflow: hidden;
     flex-wrap: wrap;
     display: flex;
     flex-direction: column;
     text-align: center;
+    /* height: 100px; */
 }
 
 
