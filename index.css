@@ -193,7 +193,7 @@ body {
 }
 
 #navBar {
-    padding-top: 2vh;
+    padding-top: 20px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -207,7 +207,7 @@ body {
 
 
 .navBarChild {
-    padding-bottom: 2vh;
+    padding-bottom: 20px;
     /* margin: auto 0; */
 }
 
