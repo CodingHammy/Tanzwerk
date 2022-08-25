@@ -120,7 +120,7 @@ body {
     background-position: 72%;
     background-size: cover;
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
     text-shadow: -2px -2px 5px rgb(99, 89, 89), 4px 4px 10px rgb(61, 60, 60), -4px 4px 10px rgb(0, 0, 0);
     display: flex;
     justify-content: center;
@@ -137,7 +137,6 @@ body {
     width: 75vw;
     position: relative;
     text-align: center;
-    top: -9vh;
     font-size: 3vh;
     font-weight: 400;
     justify-content: center;
@@ -146,7 +145,7 @@ body {
 
 #titleFont {
     position: relative;
-    top: -28vh;
+    top: -24vh;
     margin: 0 auto;
     font-weight: 400;
     font-size: 6vh;
@@ -157,6 +156,9 @@ body {
     font-weight: 800;
     font-family: 'Merienda', cursive;
 }
+
+
+
 
 /* navBar */
 
@@ -179,29 +181,42 @@ body {
 
 
 #navBarParent {
-    background: none;
-    position: sticky;
+    position: relative;
     font-size: 4vw;
     font-weight: 400;
     top: 0;
+    height: 10vh;
+}
 
+#navBarParent.sticky {
+    position: sticky;
 }
 
 #navBar {
-    /* position: sticky; */
-    z-index: 1;
-    overflow: hidden;
-    flex-wrap: wrap;
+    padding-top: 2vh;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
     text-align: center;
+    background-color: black;
+    z-index: auto;
     /* height: 100px; */
 }
+
 
 
 .navBarChild {
     padding-bottom: 2vh;
     margin: auto 0;
+}
+
+.navbarOffsetMargin {
+    padding-top: 10vh;
+}
+
+.inactive {
+    display: none;
 }
 
 /* .navBarChild:hover {
@@ -274,6 +289,7 @@ body {
 }
 
 .profileText div h5 {
+    z-index: -1;
     position: relative;
     top: 53%;
 }
