@@ -208,11 +208,12 @@ body {
 
 .navBarChild {
     padding-bottom: 2vh;
-    margin: auto 0;
+    /* margin: auto 0; */
 }
 
-.navbarOffsetMargin {
-    padding-top: 10vh;
+
+.OffsetMargin {
+    padding-top: 100px;
 }
 
 .inactive {
@@ -325,7 +326,9 @@ body {
     width: 110%;
 }
 
-
+#Kontakt {
+    height: 100vh;
+}
 
 .forty img {
     padding-left: 3vw;
