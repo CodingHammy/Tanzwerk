@@ -120,7 +120,7 @@ body {
     background-position: 72%;
     background-size: cover;
     width: 100vw;
-    height: 90vh;
+    height: 86vh;
     text-shadow: -2px -2px 5px rgb(99, 89, 89), 4px 4px 10px rgb(61, 60, 60), -4px 4px 10px rgb(0, 0, 0);
     display: flex;
     justify-content: center;
@@ -145,105 +145,123 @@ body {
 
 #titleFont {
     position: relative;
-    top: -24vh;
+    top: -20vh;
     margin: 0 auto;
     font-weight: 400;
     font-size: 6vh;
 }
 
 #logoFont {
-    font-size: 7vh;
+    font-size: 55px;
     font-weight: 800;
     font-family: 'Merienda', cursive;
 }
 
 
 
-
-/* navBar */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* hamburger */
 #navBarParent {
     position: relative;
     font-size: 4vw;
     font-weight: 400;
     top: 0;
-    height: 10vh;
+    background-color: black;
+    height: 60px;
+
+}
+
+#navBar {
+    transition: 0.3s ease;
+    text-align: center;
+    background-color: black;
+    z-index: auto;
+    padding-bottom: 10px;
+    box-shadow: 0 1px 1px rgb(83, 83, 83);
+}
+
+#menu {
+    position: relative;
+    top: 26.5px;
+    left: 70%;
+    width: 30px;
+    font-weight: 200;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+    background-color: black;
+}
+
+.bar {
+    height: 4px;
+    width: 100%;
+    background-color: white;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+#bar1 {
+    transform: translateY(-4px);
+}
+
+#bar3 {
+    transform: translateY(4px);
+}
+
+#navBar li a:hover {
+    text-shadow: 2px 2px 10px rgb(83, 83, 83);
+}
+
+#navBar li {
+    padding: 16px;
+}
+
+
+.navBar {
+    padding-top: 10px;
+    display: none;
+}
+
+.hamburger #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+}
+
+.hamburger #bar2 {
+    opacity: 0;
+}
+
+.hamburger #bar3 {
+    transform: translateY(-4px) rotate(45deg);
+}
+
+.hamburger {
+    display: block;
+}
+
+.visable {
+    display: none;
+}
+
+
+.active {
+    font-weight: bold;
+}
+
+
+/* navBar */
+
+
+.offsetMargin {
+    padding-top: 50px;
 }
 
 #navBarParent.sticky {
     position: sticky;
+    background-color: rgb(10, 10, 10);
+    box-shadow: 0 1px 1px rgb(83, 83, 83);
+
 }
-
-#navBar {
-    padding-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-    text-align: center;
-    background-color: black;
-    z-index: auto;
-    /* height: 100px; */
-}
-
-
-
-.navBarChild {
-    padding-bottom: 20px;
-    /* margin: auto 0; */
-}
-
-
-.OffsetMargin {
-    padding-top: 100px;
-}
-
-.inactive {
-    display: none;
-}
-
-/* .navBarChild:hover {
-    background-color: black;
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Sections */
-
 
 .bigHeaders {
     text-align: left;
@@ -309,6 +327,10 @@ body {
 }
 
 /* kontakt */
+
+#kontakt {
+    padding-top: 20px;
+}
 
 .kontaktPad {
     padding-left: 1rem;

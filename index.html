@@ -26,18 +26,22 @@
                     </p>
                 </div>
             </div>
-
         </header>
         <nav id="navBarParent">
-            <ul id="navBar">
-                <li id="navWil" class="navBarChild"><a href="#Willkommen">WILLKOMMEN</a></li>
-                <li id="navDas" class="navBarChild"><a href="#Das">DAS SIND WIR</a></li>
-                <li id="navWas" class="navBarChild"><a href="#Was">WAS WIR MACHEN</a></li>
-                <li id="navKon" class="navBarChild"><a href="#Kontakt">KONTAKT</a></li>
+            <div id="menu" onclick="onClick()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </div>
+            <ul id="navBar" class="navBar">
+                <li id="navWil" onclick="onClick()" class="navBarChild"><a href="#Willkommen">WILLKOMMEN</a></li>
+                <li id="navDas" onclick="onClick()" class="navBarChild"><a href="#Das">DAS SIND WIR</a></li>
+                <li id="navWas" onclick="onClick()" class="navBarChild"><a href="#Was">WAS WIR MACHEN</a></li>
+                <li id="navKon" onclick="onClick()" class="navBarChild"><a href="#Kontakt">KONTAKT</a></li>
             </ul>
         </nav>
 
-        <section id="Das" class="wrapper OffsetMargin">
+        <section id="Das" class="wrapper offsetMargin">
             <div>
                 <div class="bigHeaders">
                     <h2 class="pad">DAS SIND WIR
@@ -125,7 +129,7 @@
             </div>
         </section>
 
-        <section id="Was" class="mainSections wrapper OffsetMargin">
+        <section id="Was" class="mainSections wrapper offsetMargin">
             <div class="bigHeaders ">
                 <div>
                     <h2 class="pad">WAS WIR MACH-<br>EN</h2>
@@ -181,11 +185,11 @@
                 </div>
             </div>
         </section>
-        <footer id="Kontakt" class="wrapper OffsetMargin">
+        <footer id="Kontakt" class="wrapper offsetMargin">
             <div class="bigHeaders bigHeadersSmallScreen">
                 <h2 class="pad"><b>KONTAKT</b></h2>
             </div>
-            <div id="kontaktTab">
+            <div id="kontaktTab" class="">
                 <div class="smallTitle kontaktPad">
                     <p class="mainTextStyle">TANZWERK Mensch e.V. <br>
                         Walter-Gieseking-Str. 17 <br>
