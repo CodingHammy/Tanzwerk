@@ -375,13 +375,15 @@ body {
     box-sizing: border-box;
 }
 
+
 .lightBoxInner {
     position: relative;
     width: 95%;
     max-width: 95vw;
     max-height: 95vh;
+    height: 95%;
     background: rgba(0, 0, 0, 0.0);
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 25px rgb(0 0 0 / 30%);
 }
 
 .lightBoxbtn {
@@ -389,15 +391,27 @@ body {
     border: none;
     outline: none;
     position: absolute;
-    padding: 0 10px;
+    padding: 0 30px;
     cursor: pointer;
     color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+}
+
+.lightBoxContent {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
 }
 
 .lightBoxClose {
     font-size: 6vh;
     top: 0;
     right: 0;
+    z-index: 1;
+
 }
 
 .lightBoxRight {
@@ -432,13 +446,18 @@ body {
 
 
 .containerParent {
-    padding: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .container {
-    justify-content: center;
-    text-align: center;
+    /* display: flex; */
     align-items: center;
+    justify-content: center;
 
 }
 
@@ -492,6 +511,10 @@ body {
         font-size: 20px;
     }
 
+
+    .containerParent {
+        align-items: initial;
+    }
 }
 
 
