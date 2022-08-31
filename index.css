@@ -453,9 +453,46 @@ body {
 }
 
 
+@media only screen and (min-height: 660px) {
+    #menu {
+        left: 80%;
+    }
+}
 
 
+@media only screen and (min-width: 1200px) {
+    #kontaktTab {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
+    #Was {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    #wirText {
+        padding: 80px 40px 0 0;
+    }
+
+    #profileText {
+        padding: 80px 0 40px 0;
+    }
+
+    #Das {
+        display: flex;
+    }
+
+    h2 {
+        font-size: 160px;
+    }
+
+    body {
+        font-size: 20px;
+    }
+
+}
 
 
 
