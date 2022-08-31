@@ -358,8 +358,99 @@ body {
 }
 
 
+/* lightbox */
 
 
+
+.lightBox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.lightBoxInner {
+    position: relative;
+    width: 95%;
+    max-width: 95vw;
+    max-height: 95vh;
+    background: rgba(0, 0, 0, 0.0);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+}
+
+.lightBoxbtn {
+    background: none;
+    border: none;
+    outline: none;
+    position: absolute;
+    padding: 0 10px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.lightBoxClose {
+    font-size: 6vh;
+    top: 0;
+    right: 0;
+}
+
+.lightBoxRight {
+    font-size: 5vh;
+    right: 3vw;
+    z-index: 1;
+}
+
+.lightBoxLeft {
+    font-size: 5vh;
+    left: 3vw;
+    z-index: 1;
+}
+
+.lightBoxClose:hover {
+    text-shadow: 3px 3px 10px white;
+}
+
+.lightBoxbtn:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.lightBoxLeft:hover {
+    text-shadow: 2px 2px 10px white;
+}
+
+.lightBoxRight:hover {
+    text-shadow: -2px 2px 10px white;
+
+}
+
+
+
+.containerParent {
+    padding: 10px;
+}
+
+.container {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+}
+
+.container img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.displayNone {
+    display: none;
+}
 
 
 
