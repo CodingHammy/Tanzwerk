@@ -34,7 +34,6 @@ window.addEventListener('scroll', (e) => {
       link.parentElement.classList.remove('active');
     }
   });
-  console.log(tmp);
   let key = Object.keys(tmp).reduce((key, v) => (tmp[v] < tmp[key] ? v : key)); // copyed from stackoverflow, get the min value in an object and return the key
   document.querySelector('#navBar > li').classList.remove('active');
   document

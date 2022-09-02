@@ -256,7 +256,7 @@ body {
 
 #navBarParent.sticky {
     position: sticky;
-    background-color: rgb(10, 10, 10);
+    background-color: rgb(0, 0, 0);
     box-shadow: 0 1px 1px rgb(83, 83, 83);
 
 }
@@ -472,14 +472,110 @@ body {
 }
 
 
+
+@media only screen and (max-width: 320px) {
+    #titleFont div {
+        font-size: 1em;
+    }
+
+    .bigHeaders {
+        font-size: 70px;
+    }
+
+    .bigHeadersSmallScreen {
+        font-size: 70px;
+    }
+
+    body {
+        font-size: 1rem;
+    }
+
+    .smallTitle {
+        font-size: 1.1rem;
+    }
+
+    h2>b {
+        font-size: 50px;
+    }
+
+    .profileText>div h5 {
+        top: 40%;
+    }
+
+}
+
+
 @media only screen and (min-height: 660px) {
     #menu {
         left: 80%;
     }
+
+}
+
+@media only screen and (min-width: 600px) {
+    .forty:first-of-type {
+        padding: 0 20px 0 0;
+        width: 60%;
+    }
 }
 
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1150px) {
+
+    .bigHeaders {
+        padding: 0 30px;
+        font-size: 120px;
+    }
+
+
+
+    #titleFont {
+        font-size: 35px;
+    }
+
+    #logoFont {
+        font-size: 40px;
+    }
+
+    #blurb {
+
+        font-size: 2vh;
+
+    }
+
+    #Willkommen {
+        background-position: 0;
+        height: 90vh;
+    }
+
+    #Willkommen div {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    #titleFont {
+        position: absolute;
+        top: 50px;
+        left: 70px;
+    }
+
+    #blurb {
+        position: absolute;
+        top: 75px;
+        left: 340px;
+    }
+
+    #Willkommen div div {
+        flex-direction: column;
+    }
+
+    #Willkommen div p {
+        flex-direction: column;
+        width: 300px;
+        text-align: start;
+    }
+
     #kontaktTab {
         display: flex;
         flex-direction: row;
@@ -501,20 +597,38 @@ body {
 
     #Das {
         display: flex;
+        padding-bottom: 50px;
     }
 
-    h2 {
-        font-size: 160px;
+
+
+    #Das>div:nth-of-type() {
+        margin: 20px 0 0 20px;
     }
+
+    #wirText {
+        padding-top: 0px;
+    }
+
+    #kontaktTab {
+        padding-top: 50px;
+    }
+
 
     body {
         font-size: 20px;
     }
 
 
+    .forty:first-of-type {
+        width: 100%;
+    }
+
     .containerParent {
         align-items: initial;
     }
+
+
 }
 
 
