@@ -10,6 +10,12 @@ function onClick() {
 }
 document.querySelector('#menu').classList.add('visable');
 
+const whoMadeThis = () => {
+  console.log("Will Carroll Hamilton");
+};
+
+
+
 window.addEventListener('scroll', (e) => {
   scrollPos = window.scrollY;
   if (scrollPos > navPos) {

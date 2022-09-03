@@ -258,7 +258,6 @@ body {
     position: sticky;
     background-color: rgb(0, 0, 0);
     box-shadow: 0 1px 1px rgb(83, 83, 83);
-
 }
 
 /* Sections */
@@ -286,8 +285,6 @@ body {
     width: 8rem;
     margin: 0 1rem 0 .5rem;
     height: 25%;
-
-    /* box-shadow: 0 0 20px rgb(255, 255, 255); */
 }
 
 
@@ -353,7 +350,7 @@ body {
 }
 
 .forty img {
-    padding-left: 3vw;
+    padding-left: 10px;
     height: 300px;
 }
 
@@ -510,42 +507,68 @@ body {
         left: 80%;
     }
 
+
+
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 550px) {
     .forty:first-of-type {
         padding: 0 20px 0 0;
         width: 60%;
     }
+
+    ul li a {
+        font-size: 20px;
+    }
+
+    #navBar li {
+        padding: 10px;
+
+    }
 }
 
+@media only screen and (min-width: 950px) {
+    #menu {
+        display: none;
+    }
+
+    #navBarParent {
+        background-color: none;
+    }
+
+    #navBar {
+        display: flex;
+        font-size: 18px;
+        padding: 0 0 0 30px;
+        box-shadow: none;
+    }
+
+
+    #navBarParent.sticky {
+        box-shadow: none;
+    }
+
+
+}
 
 @media only screen and (min-width: 1150px) {
+
+    #navBar {
+        font-size: 22px;
+    }
 
     .bigHeaders {
         padding: 0 30px;
         font-size: 120px;
     }
 
-
-
-    #titleFont {
-        font-size: 35px;
-    }
-
     #logoFont {
         font-size: 40px;
     }
 
-    #blurb {
-
-        font-size: 2vh;
-
-    }
-
     #Willkommen {
         background-position: 0;
-        height: 90vh;
+        height: 100vh;
     }
 
     #Willkommen div {
@@ -555,18 +578,21 @@ body {
     }
 
     #titleFont {
+        font-size: 35px;
         position: absolute;
         top: 50px;
         left: 70px;
     }
 
     #blurb {
+        font-size: 16px;
         position: absolute;
         top: 75px;
         left: 340px;
     }
 
     #Willkommen div div {
+        text-align: center;
         flex-direction: column;
     }
 
@@ -600,10 +626,13 @@ body {
         padding-bottom: 50px;
     }
 
+    #Das>div:first-child {
+        width: 150%;
+    }
 
 
-    #Das>div:nth-of-type() {
-        margin: 20px 0 0 20px;
+    #Was>div:first-child {
+        width: 120%;
     }
 
     #wirText {
@@ -614,14 +643,29 @@ body {
         padding-top: 50px;
     }
 
+    #kontaktTab p {
+        font-size: 19px;
+    }
+
+    #Kontakt h2 {
+        font-size: 160px;
+    }
+
+    .forty img {
+        height: 400px;
+    }
 
     body {
         font-size: 20px;
     }
 
+    .forty img {
+        padding-left: 40px;
+    }
 
     .forty:first-of-type {
         width: 100%;
+
     }
 
     .containerParent {
@@ -631,196 +675,31 @@ body {
 
 }
 
-
-
-
-
-
-/* .imgProfile {
-    width: 11em;
+@media only screen and (min-width: 1350px) {
+    #kontaktTab p {
+        font-size: 21px;
+    }
 }
 
+@media only screen and (min-width: 1580px) {
+    #Kontakt h2 {
+        font-size: 180px;
+        padding: 100px 0 20px;
+    }
 
-.small-title {
-    font-weight: 500;
+    #kontaktTab p {
+        font-size: 25px;
+    }
 }
 
-.mainTitles {
-    padding: 1em 1em 1em 0;
-    font-size: 1.7em;
-    font-weight: 700;
+@media only screen and (min-width: 1680px) {
+
+    .forty:first-of-type {
+        width: 60%;
+    }
+
+
+    .forty img {
+        padding-left: 2vw;
+    }
 }
-
-
-
-#Willkommen>div {
-    display: flex;
-    flex-direction: row;
-    padding: 33px 100px;
-}
-
-
-#titleFont {
-    font-size: 2.8rem;
-    padding: 20px;
-    font-weight: 400;
-    line-height: 1.2em;
-
-}
-
-#titleFont :first-of-type {
-    font-weight: 700;
-    font-size: 1.2em;
-}
-
-
-#Willkommen>div>p {
-    padding: 20px;
-    width: 500px;
-    text-align: left;
-    font-size: 1.4rem;
-    font-weight: 500;
-    margin: auto 0;
-    letter-spacing: 0em;
-}
-
-
-
-#mainNavBar {
-    list-style: none;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    height: 12vh;
-    position: absolute;
-
-    bottom: 0;
-}
-
-
-.navAncor {
-    padding: 40px 40px 80px;
-
-}
-
-nav ul li:hover {
-    background-color: black;
-
-}
-
-
-.wrapper {
-    width: 95vw;
-    margin: auto;
-}
-
-
-
-
-#Das {
-    display: flex;
-    margin: auto;
-    flex-direction: row;
-    padding-top: 2em;
-}
-
-.bigheaders {
-    width: 33%;
-    margin: 0 auto;
-    text-align: start;
-    font-size: 12rem;
-    font-weight: 800;
-    line-height: 1.1em;
-}
-
-#dasText {
-    flex-direction: column;
-    width: 60%;
-    margin: auto;
-    padding-top: 2.5rem;
-}
-
-.profile {
-    display: flex;
-    padding: 0 0 2em;
-}
-
-.profileText {
-    padding-left: 2em;
-
-}
-
-.profileText>div {
-    margin: 0;
-    padding-bottom: 1em;
-    font-size: 1.5em;
-}
-
-.small-title {
-    font-size: 1.7rem;
-    font-weight: 700;
-}
-
-.mainTextStyle {
-    font-size: 2rem;
-}
-
-
-#Was>div {
-    display: flex;
-    flex-direction: row;
-    margin: auto;
-    flex-direction: row;
-    padding-top: 2em;
-}
-
-#wirText {
-    letter-spacing: 0.1rem;
-    font-weight: 300;
-    margin: 0;
-    flex-direction: column;
-    width: 60%;
-    padding: 3vh 0 0 3vw;
-}
-
-
-.wasWirHeader {
-    width: 33%;
-    margin: 0 auto;
-    align-items: start;
-    font-size: 9rem;
-    font-weight: 800;
-    line-height: 1.1em;
-    text-align: justify;
-}
-
-.wasWirHeader div h2 {
-    width: 80%;
-}
-
-footer div h2 {
-    font-size: 10rem;
-    font-weight: 800;
-    width: 90vw;
-    margin: auto;
-    padding: 2vh 0;
-}
-
-#Kontakt {
-    padding-bottom: 50vh;
-}
-
-#kontaktTab {
-    display: flex;
-    width: 90vw;
-}
-
-#kontaktTab div {
-    width: 30%;
-    margin: 0 auto;
-    padding: 0 0 0 1vw;
-}
-
-#kontaktTab div p {
-    width: 100%;
-} */
