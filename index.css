@@ -87,10 +87,6 @@ html {
     color: rgb(69, 146, 177);
 }
 
-.wrapper {
-    width: 95vw;
-    padding: 3.5vw;
-}
 
 body {
     background-color: black;
@@ -105,10 +101,6 @@ body {
     font-size: 1.2rem;
 }
 
-.pad {
-    margin-left: .5rem;
-}
-
 /* header */
 
 
@@ -120,7 +112,7 @@ body {
     background-position: 72%;
     background-size: cover;
     width: 100vw;
-    height: 86vh;
+    height: 95vh;
     text-shadow: -2px -2px 5px rgb(99, 89, 89), 4px 4px 10px rgb(61, 60, 60), -4px 4px 10px rgb(0, 0, 0);
     display: flex;
     justify-content: center;
@@ -157,7 +149,15 @@ body {
     font-family: 'Merienda', cursive;
 }
 
+#Was {
+    max-width: 1300px;
+    margin: 0 auto;
+}
 
+#Das {
+    max-width: 1300px;
+    margin: 0 auto;
+}
 
 /* hamburger */
 #navBarParent {
@@ -173,21 +173,23 @@ body {
 #navBar {
     transition: 0.3s ease;
     text-align: center;
-    background-color: black;
     z-index: auto;
     padding-bottom: 10px;
     box-shadow: 0 1px 1px rgb(83, 83, 83);
+    max-width: 1300px;
+    margin: 0 auto;
 }
 
 #menu {
     position: relative;
     top: 26.5px;
-    left: 70%;
+
     width: 30px;
     font-weight: 200;
     margin: 30px 0 20px 20px;
+    margin-left: auto;
+    transform: translateX(-20px);
     cursor: pointer;
-    background-color: black;
 }
 
 .bar {
@@ -215,6 +217,10 @@ body {
     padding: 16px;
 }
 
+#navBar li:hover {
+    background-color: black;
+}
+
 
 .navBar {
     padding-top: 10px;
@@ -235,6 +241,7 @@ body {
 
 .hamburger {
     display: block;
+    background-color: black;
 }
 
 .visable {
@@ -249,7 +256,6 @@ body {
 
 /* navBar */
 
-
 .offsetMargin {
     padding-top: 50px;
 }
@@ -259,6 +265,8 @@ body {
     background-color: rgb(0, 0, 0);
     box-shadow: 0 1px 1px rgb(83, 83, 83);
 }
+
+
 
 /* Sections */
 
@@ -325,9 +333,6 @@ body {
 
 /* kontakt */
 
-#kontakt {
-    padding-top: 20px;
-}
 
 .kontaktPad {
     padding-left: 1rem;
@@ -347,6 +352,8 @@ body {
 
 #Kontakt {
     height: 100vh;
+    max-width: 1300px;
+    margin: 0 auto;
 }
 
 .forty img {
@@ -452,7 +459,7 @@ body {
 }
 
 .container {
-    /* display: flex; */
+    display: flex;
     align-items: center;
     justify-content: center;
 
@@ -501,15 +508,13 @@ body {
 
 }
 
-
-@media only screen and (min-height: 660px) {
-    #menu {
-        left: 80%;
+@media only screen and (min-width: 660px) {
+    #blurb {
+        width: 60vw;
     }
-
-
-
 }
+
+
 
 @media only screen and (min-width: 550px) {
     .forty:first-of-type {
@@ -528,8 +533,65 @@ body {
 }
 
 @media only screen and (min-width: 950px) {
+    #Willkommen {
+        background-position: 0;
+        height: 100vh;
+    }
+
+    #Willkommen div {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    #Willkommen div div {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    #Willkommen div p {
+        flex-direction: column;
+        width: 300px;
+        text-align: start;
+    }
+
+    #logoFont {
+        font-size: 40px;
+    }
+
+    #titleFont {
+        font-size: 35px;
+        position: absolute;
+        top: 50px;
+        left: 70px;
+    }
+
+    #blurb {
+        font-size: 15px;
+        position: absolute;
+        top: 75px;
+        left: 320px;
+    }
+
+    #navBarParent {
+        top: -80px;
+        transition: 0.3s ease;
+        background-color: transparent;
+    }
+
+    #navBarParent.sticky {
+        top: 0;
+        transition: 0.3s ease;
+        padding-bottom: 20px;
+        box-shadow: none;
+    }
+
     #menu {
         display: none;
+    }
+
+    .hamburger {
+        background-color: transparent;
     }
 
     #navBarParent {
@@ -543,64 +605,38 @@ body {
         box-shadow: none;
     }
 
-
-    #navBarParent.sticky {
-        box-shadow: none;
+    .bigHeadersSmallScreen {
+        font-size: 12vw;
     }
 
+    .containerParent {
+        align-items: initial;
+    }
 
 }
 
 @media only screen and (min-width: 1150px) {
+    #logoFont {
+        font-size: 40px;
+    }
+
+    #blurb {
+        font-size: 16px;
+    }
 
     #navBar {
         font-size: 22px;
     }
 
+    #navBar li {
+        padding: 10px 20px;
+    }
+
+
     .bigHeaders {
-        padding: 0 30px;
         font-size: 120px;
     }
 
-    #logoFont {
-        font-size: 40px;
-    }
-
-    #Willkommen {
-        background-position: 0;
-        height: 100vh;
-    }
-
-    #Willkommen div {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-    }
-
-    #titleFont {
-        font-size: 35px;
-        position: absolute;
-        top: 50px;
-        left: 70px;
-    }
-
-    #blurb {
-        font-size: 16px;
-        position: absolute;
-        top: 75px;
-        left: 340px;
-    }
-
-    #Willkommen div div {
-        text-align: center;
-        flex-direction: column;
-    }
-
-    #Willkommen div p {
-        flex-direction: column;
-        width: 300px;
-        text-align: start;
-    }
 
     #kontaktTab {
         display: flex;
@@ -630,9 +666,17 @@ body {
         width: 150%;
     }
 
+    #Das>div:last-child {
+        width: 200%;
+    }
+
 
     #Was>div:first-child {
         width: 120%;
+    }
+
+    #Was>div:last-child {
+        width: 200%;
     }
 
     #wirText {
@@ -643,12 +687,9 @@ body {
         padding-top: 50px;
     }
 
-    #kontaktTab p {
-        font-size: 19px;
-    }
 
     #Kontakt h2 {
-        font-size: 160px;
+        font-size: 120px;
     }
 
     .forty img {
@@ -668,17 +709,34 @@ body {
 
     }
 
-    .containerParent {
-        align-items: initial;
-    }
+
+
+
 
 
 }
 
 @media only screen and (min-width: 1350px) {
-    #kontaktTab p {
-        font-size: 21px;
+    #logoFont {
+        font-size: 45px;
     }
+
+    #titleFont {
+        font-size: 40px;
+        top: 60px;
+        left: 80px;
+    }
+
+    #Willkommen div p {
+        width: 360px;
+    }
+
+    #blurb {
+        font-size: 20px;
+        top: 85px;
+        left: 350px;
+    }
+
 }
 
 @media only screen and (min-width: 1580px) {
@@ -687,9 +745,7 @@ body {
         padding: 100px 0 20px;
     }
 
-    #kontaktTab p {
-        font-size: 25px;
-    }
+
 }
 
 @media only screen and (min-width: 1680px) {
@@ -701,5 +757,9 @@ body {
 
     .forty img {
         padding-left: 2vw;
+    }
+
+    .bigHeaders {
+        font-size: 160px;
     }
 }
