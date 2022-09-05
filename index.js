@@ -10,9 +10,6 @@ function onClick() {
 }
 document.querySelector('#menu').classList.add('visable');
 
-const whoMadeThis = () => {
-  console.log("Will Carroll Hamilton");
-};
 
 
 

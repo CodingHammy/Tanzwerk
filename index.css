@@ -145,11 +145,11 @@ body {
     top: -20vh;
     margin: 0 auto;
     font-weight: 400;
-    font-size: 6vh;
+    font-size: 45px;
 }
 
 #logoFont {
-    font-size: 55px;
+    font-size: 50px;
     font-weight: 800;
     font-family: 'Merienda', cursive;
 }
@@ -280,7 +280,6 @@ body {
     margin: auto;
     font-weight: 800;
     font-size: 90px;
-    padding: 5vw 0 10vw 0;
 }
 
 .bigHeadersSmallScreen {
@@ -480,10 +479,24 @@ body {
     padding: 0 20px;
 }
 
-@media only screen and (max-width: 320px) {
-    #titleFont div {
-        font-size: 1em;
+@media only screen and (max-width: 450px) {
+    #Willkommen {
+        padding: 0;
     }
+
+
+    #titleFont div {
+        font-size: 40px;
+    }
+
+    #logoFont {
+        font-size: 35px;
+    }
+
+    #blurb {
+        font-size: 25px;
+    }
+
 
     .bigHeaders {
         font-size: 70px;
@@ -670,6 +683,7 @@ body {
 
     #Das>div:last-child {
         width: 200%;
+        padding-left: 27px;
     }
 
 
@@ -703,7 +717,7 @@ body {
     }
 
     .forty img {
-        padding-left: 40px;
+        padding-left: 0;
     }
 
     .forty:first-of-type {
